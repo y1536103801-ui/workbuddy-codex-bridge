@@ -1,6 +1,6 @@
 # 使用说明
 
-适用于 macOS 13 及以上。Apple 芯片下载 arm64，Intel 下载 x64。安装包已包含 Node 运行时。
+适用于 macOS 13.5 及以上。Apple 芯片下载 arm64，Intel 下载 x64。安装包已包含 Node 运行时。
 
 1. 解压安装包，双击“安装.command”，或打开 WorkBuddy Codex Bridge.app。程序会安装到 ~/Applications，并打开设置页面。
 2. 在 WorkBuddy 登录账号，回到设置页点击“连接已登录的 WorkBuddy”。也可以在“手动导入账号凭证”中粘贴完整 JSON（accessToken、refreshToken、uid、expiresAt，以及账号适用的 enterpriseId/domain）。
