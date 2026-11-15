@@ -1,0 +1,25 @@
+{
+  "version": "0.1.0",
+  "repository": "https://github.com/y1536103801-ui/workbuddy-codex-bridge",
+  "release": "https://github.com/y1536103801-ui/workbuddy-codex-bridge/releases/tag/v0.1.0",
+  "publishedAt": "2026-11-15T13:22:11Z",
+  "public": true,
+  "assetsCount": 5,
+  "packages": [
+    {
+      "file": "WorkBuddy-Codex-Bridge-0.1.0-macOS-arm64.zip",
+      "bytes": 39612054,
+      "sha256": "761f71a85c66d597033647c9ccd27905b7c87f992b9c71e8eaf60072b8441946",
+      "anonymousDownload": true,
+      "matched": true
+    },
+    {
+      "file": "WorkBuddy-Codex-Bridge-0.1.0-macOS-x64.zip",
+      "bytes": 40967450,
+      "sha256": "a734fb669f35940ddcbefb07e3974dab2692a3511e1fa1be4bf1441c9aaa7675",
+      "anonymousDownload": true,
+      "matched": true
+    }
+  ],
+  "auxiliaryAssetsMatched": true
+}

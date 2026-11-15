@@ -23,10 +23,14 @@
 
 真实模型任务覆盖 GLM-5.3-Flash；30 个模型是本次账号目录返回数量，不代表全部完成工具验收。每个模型可单独检测。
 Intel 包已构建并做静态校验，尚未在 Intel 实机运行。国际区入口已实现，尚无国际区账号真实验收。
-安装包使用 ad-hoc 临时签名，尚无 Apple Developer ID 公证；首次打开步骤见安装说明。正在发布至公共仓库 https://github.com/y1536103801-ui/workbuddy-codex-bridge，Release 标签 v0.1.0。
+安装包使用 ad-hoc 临时签名，尚无 Apple Developer ID 公证；首次打开步骤见安装说明。已发布至公共仓库 https://github.com/y1536103801-ui/workbuddy-codex-bridge，Release 标签 v0.1.0。
 
 最终全量后只有最低系统版本、打包与验收脚本/记录变化；业务源码与已通过的全量一致。后续只做对应安装包验收，未重复业务全量。
 
-## 公开发布准备
+## 公开发布完成
 
 用户已授权公开仓库及 Release。README 已补充按芯片下载、macOS 首次打开、WorkBuddy 连接、模型选择与应用、切换、验证、恢复和卸载步骤。已扫描当前文件及全部 Git 历史，未发现凭证模式匹配；发布复用已验收安装包，不触发程序重建或业务全量。
+
+公开发布于 2026-11-15 21:22（北京时间）：[GitHub 仓库](https://github.com/y1536103801-ui/workbuddy-codex-bridge)，[v0.1.0 Release](https://github.com/y1536103801-ui/workbuddy-codex-bridge/releases/tag/v0.1.0)。GitHub 识别为 PUBLIC 仓库与 MIT 许可证；发布标签指向包含完整 README 的提交 5ab5c7591c96ee26014c02d98b872f85d8c72c7f。
+
+Release 含两个芯片安装 ZIP、安装说明、manifest.json、SHA256SUMS.txt，共 5 项资源。以不带 GitHub 凭证的请求完整下载两个 ZIP，大小和 SHA256 均与既有验收包一致；三个辅助资源逐字节一致。见 evidence/github-publication-verification.json。
