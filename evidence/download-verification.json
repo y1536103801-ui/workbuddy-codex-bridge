@@ -1,0 +1,19 @@
+{
+  "version": "0.1.0",
+  "sourceCommit": "d8c4b9489f326e1922dacd3dd1f1eb496f92f181",
+  "method": "downloaded from Mac mini via scp and SHA256 checked locally",
+  "packages": [
+    {
+      "file": "WorkBuddy-Codex-Bridge-0.1.0-macOS-arm64.zip",
+      "sha256": "761f71a85c66d597033647c9ccd27905b7c87f992b9c71e8eaf60072b8441946",
+      "bytes": 39612054,
+      "matched": true
+    },
+    {
+      "file": "WorkBuddy-Codex-Bridge-0.1.0-macOS-x64.zip",
+      "sha256": "a734fb669f35940ddcbefb07e3974dab2692a3511e1fa1be4bf1441c9aaa7675",
+      "bytes": 40967450,
+      "matched": true
+    }
+  ]
+}

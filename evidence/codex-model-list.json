@@ -1,0 +1,6 @@
+{
+  "method": "Codex app-server model/list",
+  "modelCount": 30,
+  "glmFound": true,
+  "passed": true
+}

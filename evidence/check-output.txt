@@ -1,0 +1,35 @@
+
+> workbuddy-codex-bridge@0.1.0 check
+> npm run build && npm test
+
+
+> workbuddy-codex-bridge@0.1.0 build
+> node scripts/build.mjs
+
+Built standalone runtime (no Harness/OpenCodex imports).
+
+> workbuddy-codex-bridge@0.1.0 test
+> node --test --test-concurrency=1 test/*.test.mjs
+
+✔ manual import, future model selection and refresh are independent from Harness (7.405375ms)
+✔ expired credentials refresh once across concurrent requests (3.131833ms)
+✔ converts complete tool history and preserves encrypted reasoning (0.916667ms)
+✔ rejects unsupported images and references instead of dropping content (0.482334ms)
+✔ namespaced custom tools convert through input string and return custom event (1.482833ms)
+✔ streams unicode, reasoning and usage with completion (0.981417ms)
+✔ truncated upstream and malformed tool JSON never become completed (0.272417ms)
+✔ length termination remains incomplete and does not execute partial tools (0.167458ms)
+✔ non-streaming Responses returns same final output (0.103125ms)
+✔ requires key and rejects cross-site origin and DNS rebinding host (25.058917ms)
+✔ serves page with CSP and exposes dynamic catalog (2.849584ms)
+✔ Responses endpoint executes a complete streaming turn (2.631167ms)
+✔ Codex configuration preserves other settings, can switch and restore (7.190417ms)
+✔ restore refuses to overwrite intervening edits (2.448417ms)
+ℹ tests 14
+ℹ suites 0
+ℹ pass 14
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 187.558083

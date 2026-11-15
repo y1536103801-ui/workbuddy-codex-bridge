@@ -1,0 +1,22 @@
+{
+  "version": "0.1.0",
+  "sourceCommit": "d8c4b9489f326e1922dacd3dd1f1eb496f92f181",
+  "nodeVersion": "24.22.2",
+  "builtAt": "2026-11-15T12:48:37.258Z",
+  "packages": [
+    {
+      "file": "WorkBuddy-Codex-Bridge-0.1.0-macOS-arm64.zip",
+      "arch": "arm64",
+      "bytes": 39612054,
+      "sha256": "761f71a85c66d597033647c9ccd27905b7c87f992b9c71e8eaf60072b8441946",
+      "nodeArchiveSha256": "aa9549349e47dffaa42dcf95d6e06ade8c4bdafc980979883b88767670df385a"
+    },
+    {
+      "file": "WorkBuddy-Codex-Bridge-0.1.0-macOS-x64.zip",
+      "arch": "x64",
+      "bytes": 40967450,
+      "sha256": "a734fb669f35940ddcbefb07e3974dab2692a3511e1fa1be4bf1441c9aaa7675",
+      "nodeArchiveSha256": "d5e336d588c45be0c37dbd52cc29895593009ca4997a77a1fd02815131ed0e52"
+    }
+  ]
+}

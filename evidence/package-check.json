@@ -1,0 +1,37 @@
+{
+  "version": "0.1.0",
+  "sourceCommit": "d8c4b9489f326e1922dacd3dd1f1eb496f92f181",
+  "at": "2026-11-15T12:49:19.448Z",
+  "packages": [
+    {
+      "arch": "arm64",
+      "sha256": "761f71a85c66d597033647c9ccd27905b7c87f992b9c71e8eaf60072b8441946",
+      "signatureVerified": true,
+      "secretsFound": 0,
+      "minimumOS": "13.5",
+      "standaloneRuntime": true
+    },
+    {
+      "arch": "x64",
+      "sha256": "a734fb669f35940ddcbefb07e3974dab2692a3511e1fa1be4bf1441c9aaa7675",
+      "signatureVerified": true,
+      "secretsFound": 0,
+      "minimumOS": "13.5",
+      "standaloneRuntime": true
+    }
+  ],
+  "checks": [
+    "one-click installer with no node on PATH",
+    "occupied port automatically avoided",
+    "fresh installation does not auto-import accounts",
+    "native app launcher opens installed service",
+    "packaged runtime connects directly to WorkBuddy",
+    "Codex reads input and writes 42 through installed package",
+    "Codex settings restore preserves original values",
+    "disconnect clears cached credentials",
+    "uninstaller removes app and launch agent"
+  ],
+  "passed": true,
+  "modelCount": 30,
+  "codexExitCode": 0
+}
