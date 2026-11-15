@@ -1,0 +1,24 @@
+{
+  "browser": "Google Chrome",
+  "desktop": [
+    1440,
+    1100
+  ],
+  "mobile": [
+    390,
+    844
+  ],
+  "flows": [
+    "authenticated opening",
+    "fragment removed",
+    "search",
+    "select",
+    "apply to isolated Codex",
+    "selection persists across reload",
+    "empty search",
+    "switch models",
+    "no horizontal overflow"
+  ],
+  "consoleErrors": [],
+  "passed": true
+}

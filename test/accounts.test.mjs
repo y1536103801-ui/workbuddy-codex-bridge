@@ -1,0 +1,12 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { mkdtemp, rm, readFile } from 'node:fs/promises';
+import { join } from 'node:path';
+import { tmpdir } from 'node:os';
+import { Accounts } from '../dist/accounts.mjs';
+const root=await mkdtemp(join(tmpdir(),'wbcb-accounts-'));process.env.WBCB_HOME=root;process.env.DSH_HOME='/nonexistent-must-not-be-used';
+const client={fetchModels:async()=>[{id:'future-model-2030',name:'Future',contextWindow:128000,maxTokens:4096}],refreshToken:async c=>({accessToken:'rotated',expiresInSec:3600})};
+const a=new Accounts(client);
+test('manual import, future model selection and refresh are independent from Harness',async()=>{await a.connect({credential:{accessToken:'fixture-secret',refreshToken:'fixture-refresh',uid:'fixture',expiresAt:Date.now()+3600000}});assert.equal((await a.status()).models[0].id,'future-model-2030');await a.select('future-model-2030');assert.equal((await a.status()).selected,'future-model-2030');assert.equal((await a.current()).accessToken,'fixture-secret');const status=JSON.stringify(await a.status());assert(!status.includes('fixture-secret'));assert(!status.includes('fixture-refresh'));await assert.rejects(a.select('not-in-catalog'),/目录/);await a.disconnect();assert.equal((await a.status()).connected,false);assert(!(await readFile(join(root,'credential-cn.json'),'utf8')).includes('fixture-secret'));});
+test('expired credentials refresh once across concurrent requests',async()=>{let refreshes=0;const b=new Accounts({...client,refreshToken:async()=>{refreshes++;return {accessToken:'renewed',expiresInSec:3600};}});await b.connect({credential:{accessToken:'old',refreshToken:'refresh',uid:'fixture',expiresAt:1}});const rows=await Promise.all([b.current(),b.current()]);assert.equal(refreshes,1);assert(rows.every(c=>c.accessToken==='renewed'));});
+test.after(()=>rm(root,{recursive:true,force:true}));

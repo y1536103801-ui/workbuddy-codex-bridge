@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-15",
+  "environment": "Mac mini arm64, isolated CODEX_HOME and bridge data",
+  "codexVersion": "0.169.0-alpha.11.1",
+  "model": "glm-5.3-flash",
+  "input": "17 29",
+  "resultFile": "46\n",
+  "finalAnswer": "DONE",
+  "exitCode": 0,
+  "toolTypes": [
+    "command_execution",
+    "file_change",
+    "agent_message"
+  ],
+  "usage": {
+    "input_tokens": 17022,
+    "cached_input_tokens": 11200,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 87,
+    "reasoning_output_tokens": 0
+  },
+  "passed": true
+}

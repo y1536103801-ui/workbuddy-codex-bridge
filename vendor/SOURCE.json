@@ -1,0 +1,18 @@
+{
+  "upstream": "https://github.com/corrinehu/dsh-workbuddy-connect",
+  "localForkVersion": "0.8.1-ao-routing.15",
+  "license": "MIT",
+  "originalFiles": {
+    "restriction.ts": "1a68c979d5e1046f7bdc7f92c86c41fe7f695777b9535503d30848ca03ae8e83",
+    "upstream.ts": "49ee76274975a50642842c02d634c7a93062d0d2297d45c7feac77306710831e",
+    "probe.ts": "1049d8705c147710451b054f4284141d7ce2e44ef113bf4b59c2b78e179bed5b",
+    "client-identity.ts": "5901183b4c4d9ccdfeaa8294bb650e5c7c45dc9d2a643787e5b915a39b0a8a3b",
+    "status-paths.ts": "ae3a6d6ac9b4cc9e165fb06e0527853643ff3c2bf9ebb440410c84d60cb08941",
+    "stale-lock.ts": "d3a9fe9db6570e65a64a7a32588cc0850786e78da500a865e32e35607bcfae19",
+    "app-version.ts": "f3ad1af0462a1c89360f20ce260e2aadcbb56f752ba742aa68e9a0127c4120bc",
+    "wsl.ts": "b97a1d4df5a1c4101617f9c81faeeda3b1e21cc91f36588769b60c8edb8e3555",
+    "desktop-credential-protection.ts": "9276f76db91b8d475e6484afddb33f0a886d2366877dcd6ff90b2177f4ac5594",
+    "variants.ts": "edd11d0544d33e855f946427a97eb788a02ddeb6bb724896a51eb79d0a216597",
+    "auth.ts": "088b55d523002ca5f39aa617122dcba6dd1762ba9356291ed3d2a98528d8c1e3"
+  }
+}
